@@ -11,9 +11,7 @@ fn main() {
         .unwrap()
         .as_secs(); // What's the use of this timestamp here?
     let command = format!(
-        "Your command here with {}, please checkout exercises/tests/build.rs",
         "rustc-env=TEST_FOO={}",
-        "rustc-cfg=feature=\"pass\"",
         timestamp
     );
     println!("cargo:{}", command);
